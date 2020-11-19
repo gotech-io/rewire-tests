@@ -1,0 +1,18 @@
+.fields {
+
+}
+
+.fields > div {
+    margin: 6px 0;
+}
+
+.fields label {
+    display: inline-block;
+    min-width: 120px;
+}
+
+#testHref {
+    display: block;
+    margin: 6px 0;
+    font-size: 18px;
+}

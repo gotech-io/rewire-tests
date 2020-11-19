@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewire Tests</title>
-</head>
-<body>
-    <h1>Hello Rewire</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rewire Tests</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Rewire Deep Linking</h1>
+
+        <div class="fields">
+            <div>
+                <label for="hostName">host:</label>
+                <input type="text" id="hostName" name="hostName" value="campaign" />
+            </div>
+            <div>
+                <label for="affiliateId">affiliateId:</label>
+                <input type="text" id="affiliateId" name="affiliateId" value="1234" />
+            </div>
+            <div>
+                <label for="utmSource">utmSource:</label>
+                <input type="text" id="utmSource" name="utmSource" value="marketing-mailer" />
+            </div>
+            <div>
+                <label for="utmMedium">utmMedium:</label>
+                <input type="text" id="utmMedium" name="utmMedium" value="email" />
+            </div>
+            <div>
+                <label for="utmCampaign">utmCampaign:</label>
+                <input type="text" id="utmCampaign" name="utmCampaign" value="black-friday" />
+            </div>
+            <div>
+                <label for="invitationCode">invitationCode:</label>
+                <input type="text" id="invitationCode" name="invitationCode" value="4321" />
+            </div>
+            <input type="button" value="Generate URL" onclick="generateUrl()" />
+        </div>
+
+        <a href="rewire://campaign/" id="testHref" target="_blank">rewire://campaign/</a>
+
+        <script src="scripts.js"></script>
+    </body>
 </html>
