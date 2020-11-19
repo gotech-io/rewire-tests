@@ -1,0 +1,9 @@
+{
+    "name": "rewire-tests",
+    "version": "0.1.0",
+    "private": false,
+    "homepage": "https://gotech-io.github.io/rewire-tests",
+    "scripts": {
+        "deploy": "gh-pages -d build"
+    }
+}
